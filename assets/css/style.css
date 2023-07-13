@@ -366,5 +366,6 @@ footer{
     .head::before{
         font-size: 30px;
         width: 3rem;
+        margin-left: -1.5rem;
     
 } 
