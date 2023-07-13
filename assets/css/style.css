@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.reveal{
+    position: relative;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.sec-active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+.navb{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    align-items: center;
+    padding-top:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+.navb #webname{
+    text-decoration: none;
+    color: blue;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 1%;
+}
+.navb #webname sup{
+    font-weight: 500;
+    font-size: 17px;
+
+}
+.act li:last-child{
+    margin-right: 30px;
+}
+.navb .act ul li{
+    display: inline-block;
+}
+
+.navb .act ul li a {
+
+    text-decoration: none;
+    border-radius: 5px;
+    padding:5px 18px;
+    font-weight: 500;
+    color: black;
+}
+.navb .act ul li a:hover, .navb .act ul li i:hover{
+    
+    background-color: blue;
+    color: white;
+}
+
+.navb .act ul li.active a{
+    border-bottom: 2px blue solid;
+    }
+
+#tbars{
+    display: none;
+}
+.abouts{
+    padding:100px 50px;
+}
+
+.head{
+    width: 100%;
+    background-image: url(../img/features-5.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-attachment: fixed;
+    background-position-y: 70px;
+ 
+}
+.head a{
+    margin: 25% auto;
+    padding:  10px 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+.head a:hover{
+    border:none;
+    transition: 0.1s;
+    background-color: blue;
+    color: white;
+}
+.head::before{
+    top: 70%;
+    content:'ⱽ';
+    font-size: 60px;
+    left: 50%;
+    margin-left: -3rem;
+    position: absolute;
+    text-align: center;
+    width: 6rem;
+    font-weight: 1;
+    animation: bounce 1s ease infinite;
+    
+}
+@keyframes bounce{
+    50%{
+        top: 72%;
+    }
+}
+
+
+
+@media screen and (max-width:500px){
+    .navb{
+        position:relative;
+    }
+    .act{
+        position: relative;
+        float: none;
+    }
+    .navb a, .navb i{
+        display:block;
+        float: none;
+    }
+    
+}
+
+.block{
+    margin-bottom: 100px;
+    background-color: rgba(145, 213, 235, 0.288);
+}
+
+.box-1, .box-2, .box-3, .box-4{
+    color: blue;
+}
+
+
+.blue-effect-ca{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+}
+.big-box{
+    padding: 1%;
+    padding-bottom: 100px ;
+    
+}
+.big-box h1{
+    color: blue;
+    text-align: center;
+    padding: 40px;
+}
+.course-sec, .trainers-sec, .events-sec{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.events-sec img{
+    width: 100%;
+    margin-bottom: 100px;
+    
+}
+.events-sec p{
+    font-weight: 500;
+    padding: 50px 5% ;
+    color: blue;
+}
+.c-box, .t-box{
+    width: 25%;
+    min-width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 4%;
+    padding-bottom: 20px;
+}
+.c-box img{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.c-box img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.c-box h5{
+    background-color: blue;
+    display: inline-block;
+    color: white;
+    margin: 25px auto;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.c-box h5, .c-box p{
+    padding: 10px 30px;
+}
+.c-box a{
+    text-decoration: none;
+    color: blue;
+    border: 1px blue solid;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.c-box a:hover{
+    color: white;
+    border: 1px solid blue;
+    background-color: blue;
+}
+
+.t-box img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+.t-box:hover img{
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+.t-box h5, .t-box p{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+ .social-links{
+    display: flex;
+    justify-content: space-evenly;
+ }
+.social-links a .fa {
+    padding: 10px;
+    margin: 10px ;
+    border-radius: 50%;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.icons a .fa{
+    padding:10px;
+    margin: 10px ;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 255, 0.658);
+    color: white;
+}
+.t-box a .fa:hover{
+    border: 1px solid blue;
+    padding: 9px;
+    
+}
+.icons  a .fa:hover{
+    background-color:blue;
+    
+}
+footer{
+        background-color: rgba(145, 213, 235, 0.288);
+    }
+
+.mentor{
+    columns: rgba(0, 0, 0, 0.719);
+}
+.useful-links a::before, .our-services a::before{
+    content: "→ ";
+    color: blue;
+}
+
+.useful-links a, .our-services a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.726);
+
+}
+.useful-links a:hover, .our-services a:hover{
+    color: blue;
+}
+.input-bar{
+    display: flex;
+}
+.our-services input{
+    width: 90%;
+    padding: 8px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 255, 0.288);
+}
+.our-services button{
+    color: white;
+    background-color: blue;
+    border: none;
+    padding: 9px;
+    border-radius: 18px;
+    position: relative;
+    right: 45px;
+}
+.footer-line{
+    background-color: rgba(145, 213, 235, 0.397);
+}
+.text h6{
+    display: inline-block;
+    color: blue;
+}
+.text-con{
+
+}
+.text-con h1
+{
+    color: blue;
+    padding-bottom: 30px;
+
+}
+.text-con ul li{
+    line-height: 50px;
+    color: blue;
+    list-style: none;
+}
+.text-con ul li::before{
+    content: "→ ";
+}
+@media  screen and (max-width: 625px) {
+    
+    .navb{
+        padding:  10px 0;
+        position: relative;
+        overflow: visible;
+    }
+    .head a{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .act{
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: white;
+        padding-right: 20px;
+        display: none;
+    }
+    .act-show{
+        display: inline;
+    }
+    .navb .act ul li{
+        display: block;
+        margin: 10px 0;
+    }
+    
+    #tbars{
+        display: inline;
+        margin-right: 30px;
+    }
+    
+} 

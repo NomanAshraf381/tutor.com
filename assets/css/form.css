@@ -1,0 +1,77 @@
+.registration-form{
+    width: 80%;
+    color: blue;
+    padding: 5%;
+    min-width: 300px;
+    overflow: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    opacity: 50;
+
+}
+select, input, input::placeholder{
+    color: blue;
+}
+.blockf{
+    margin: 30px 0px;
+}
+label{
+    font-weight: 600;
+    font-size: 14pt;
+
+}
+.registration-form h1{
+    color: blue;
+    margin: 50px;
+}
+.sel{
+    border: 0;
+    border-bottom:1px blue solid ;
+    outline: none; 
+    margin: 0px 10px;
+}
+
+.y-n, .quali-d, .quali-n, .quali-ins{
+    border: 0;
+    border-bottom:1px blue solid ;
+    outline: none;
+    width: 30%;
+    min-width: 50px;
+    margin: 0px 20px;
+}
+.f-n, .cn-num, .add{
+    border: 0;
+    border-bottom:1px blue solid ;
+    outline: none;
+    width: 73%;
+    min-width: 50px;
+    margin: 0px 20px;
+}
+#address{
+    border: 1px blue solid;
+}
+.quali-date{
+    border: 0;
+    border-bottom:1px blue solid ;
+    outline: none;
+    width: 30%;
+    min-width: 50px;
+    margin: 0px 20px;
+}
+.lis, .applying {
+    border: 0;
+    border-bottom:1px blue solid ;
+    outline: none; 
+    margin-left: 15px;
+    width: 73%;
+}
+.butn{
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 255, 0.800);
+    color: white;
+    border-radius: 18px;
+    border: none;
+}
+.butn:hover{
+    background-color: blue;
+}
