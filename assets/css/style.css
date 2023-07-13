@@ -332,6 +332,9 @@ footer{
 .text-con ul li::before{
     content: "→ ";
 }
+a{
+    text-decoration: none !important;
+}
 @media  screen and (max-width: 625px) {
     
     .navb{
@@ -367,5 +370,6 @@ footer{
         font-size: 30px;
         width: 3rem;
         margin-left: -1.5rem;
+    }
     
 } 
