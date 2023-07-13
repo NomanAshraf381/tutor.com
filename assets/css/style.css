@@ -363,5 +363,7 @@ footer{
         display: inline;
         margin-right: 30px;
     }
+    .head::before{
+        font-size: 30px;
     
 } 
